@@ -5,10 +5,10 @@ import os
 
 epi, score, Q  = [], [], []
 
-os.chdir('/home/xiaowei/Download/gitdown/gitup')
+
 os.system('git pull --update')
 
-with open('/home/xiaowei/Download/gitdown/gitup/log','r') as f:
+with open('log','r') as f:
 	i = 0
 	for s in f:
 		i += 1
@@ -26,7 +26,7 @@ f1.add_subplot(1,2,2)
 plt.plot(epi,Q,'.')
 
 epi, score, Q  = [], [], []
-with open('/home/xiaowei/Download/gitdown/gitup/log12','r') as f:
+with open('log12','r') as f:
 	i = 0
 	for s in f:
 		i += 1
